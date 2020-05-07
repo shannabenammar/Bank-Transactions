@@ -1,0 +1,328 @@
+		Bank Accounts in the Database
+----------------------------------------------------------------------------------------------------------------------------------------
+First Name || Last Name || Social Security Number || Account Number || Balance || Account Type |&-40s| Date |            
+----------------------------------------------------------------------------------------------------------------------------------------
+william   james     333444555           123456989   $      303.56checking  open           
+----------------------------------------------------------------------------------------------------------------------------------------
+steven    thomas    567857989           345678980   $      706.80saving    closed         
+----------------------------------------------------------------------------------------------------------------------------------------
+stacey    lolle     101707899           304567897   $      100.00CD        1         12        2019      open           
+----------------------------------------------------------------------------------------------------------------------------------------
+taylor    beet      345678989           344566877   $        0.00saving    closed         
+----------------------------------------------------------------------------------------------------------------------------------------
+ugen      belter    456787233           284922675   $    10234.60checking  open           
+----------------------------------------------------------------------------------------------------------------------------------------
+william   james     333444555           782485336   $      303.56CD        9         15        2020      open           
+----------------------------------------------------------------------------------------------------------------------------------------
+Transaction Requested: Clear Check 
+Account Number: 123456989
+Check Amount: $100.00 
+Date of check: 10 10 2020
+This check has been cleared 
+The new balance of the account is 203.56
+
+
+Transaction Requested: Clear Check 
+Account Number: 345678980
+Check Amount: $30.00 
+Date of check: 1 3 2018
+Error: This account is not a checkings account
+Account will be charged a $2.50 service fee
+The new balance of the account is 704.3
+
+
+Transaction Requested: Clear Check 
+Account Number: 304567897
+Check Amount: $20.00 
+Date of check: 1 2 1018
+Error: This account is not a checkings account
+Account will be charged a $2.50 service fee
+The new balance of the account is 97.5
+
+Transaction Requested: Clear Check 
+Account Number: 37482938
+Error: This account does not exist
+
+
+Transaction Requested: Clear Check 
+Account Number: 284922675
+Check Amount: $0.00 
+Date of check: 1 10 2020
+This check has been cleared 
+The new balance of the account is 10234.6
+
+Transaction Requested: Clear Check 
+Account Number: 284922675
+Check Amount: $20000.00 
+Date of check: 1 10 2020
+Error: This account lacks sufficent funds 
+Account will be charged a $2.50 service fee 
+The new balance of the account is 10232.1
+
+Transaction Requested: Clear Check 
+Account Number: 284922675
+Check Amount: $10.00 
+Date of check: 1 19 2018
+Error: The date of this check is invalid
+Account will be charged a $2.50 service fee
+The new balance of the account is 10229.6
+
+Transaction Requested: Delete Account
+Account Number: 284922675
+Error: This account has a balance of 10229.6which is over zero
+
+Transaction Requested: Delete Account
+Account Number: 344566877
+This account has been deleted
+
+Transaction Requested: Delete Account 
+Account Number: 67689878
+Error: This account does not exist
+
+
+ Transaction Requested: New Account
+ Error: Account number 123456989 already exists
+
+Transaction Requested: New Account
+Account Number: 122333787 has been added
+
+Transaction Requested: Deposit
+Account Number: 782485336
+Amount to withdrawal: $20.0
+Error: Account Number 782485336 is a CD account which has not yet passed its maturity date
+
+
+Transaction Requested: Deposit
+Account Number: 345678980
+Amount to withdrawal: $10.0
+Error: Account 345678980 is Closed.
+
+
+Transaction Requested: Deposit
+Account Number: 123456989
+Amount to Deposit: $-30.0
+Error: $-30.00 is an invalid amount
+
+Transaction Requested: Deposit
+Account Number: 304567897
+Old Balance: $97.50
+Amount to Deposit: $20.00New Balance: $117.50
+
+Transaction Requested: Deposit
+Account Number: 123456989
+Old Balance: $203.56Amount to Deposit: $100.0
+New Balance: $303.56
+
+Transaction Requested: Deposit
+Account Number: 5555555
+Amount to withdrawal: $330.0
+Error: Account Number 5555555 does not exist
+
+
+Transaction Requested: Account Info
+Error: social security number 4455664 does not exist
+
+
+
+Transaction Requested: Account Info
+Social security number requested: 567857989
+Name: steven thomas
+Account Number: 345678980
+Current Balance: $704.3
+Account Type: saving
+Account Status: closed
+
+Transaction Requested: Account Info
+Social security number requested: 333444555
+Name: william james
+Account Number: 123456989
+Current Balance: $303.56
+Account Type: checking
+Account Status: open
+
+This is the second account under SSN: 333444555
+Name: william james
+Account Number: 782485336
+Current Balance: $303.56
+Account Type: CD
+Account Status: open
+Date Info: 9 15 2020
+
+
+Transaction Requested: Account Info and Transaction History
+Error: social security number 4455664 does not exist
+
+
+Transaction Requested: Account Info and Transaction History
+Social security number requested: 567857989
+Name: steven thomas
+Account Number: 345678980
+Current Balance: $704.3
+Account Type: saving
+Account Status: closed
+
+Transaction History of this Account: 
+Transaction Type: Clear Check
+Transaction Amount: -2.5
+Transaction Date: 4 7 2020
+Transaction Outcome: failure
+Transaction Failure Reason: Account was not a checkings account
+
+Transaction History of this Account: 
+Transaction Type: Deposit
+Transaction Amount: 0.0
+Transaction Date: 4 7 2020
+Transaction Outcome: failure
+Transaction Failure Reason: Account is closed
+
+Transaction History of this Account: 
+Transaction Type: Account Info
+Transaction Amount: 0.0
+Transaction Date: 4 7 2020
+Transaction Outcome: Success
+
+
+Transaction Requested: Account Info and Transaction History
+Social security number requested: 333444555
+Name: william james
+Account Number: 123456989
+Current Balance: $303.56
+Account Type: checking
+Account Status: open
+
+Transaction History of this Account: 
+Transaction Type: Clear Check
+Transaction Amount: 100.0
+Transaction Date: 4 7 2020
+Transaction Outcome: Success
+
+Transaction History of this Account: 
+Transaction Type: New Account
+Transaction Amount: 0.0
+Transaction Date: 4 7 2020
+Transaction Outcome: failure
+Transaction Failure Reason: Account already exists
+
+Transaction History of this Account: 
+Transaction Type: Deposit
+Transaction Amount: 0.0
+Transaction Date: 4 7 2020
+Transaction Outcome: failure
+Transaction Failure Reason: Amount to deposit was invalid
+
+Transaction History of this Account: 
+Transaction Type: Deposit
+Transaction Amount: 100.0
+Transaction Date: 4 7 2020
+Transaction Outcome: Success
+
+Transaction History of this Account: 
+Transaction Type: Account Info
+Transaction Amount: 0.0
+Transaction Date: 4 7 2020
+Transaction Outcome: Success
+
+Transaction Requested: Account Info and Transaction History
+Social security number requested: 333444555
+Name: william james
+Account Number: 782485336
+Current Balance: $303.56
+Account Type: CD
+Account Status: open
+Date Info: 9 15 2020
+
+Transaction History of this Account: 
+Transaction Type: Deposit
+Transaction Amount: 0.0
+Transaction Date: 4 7 2020
+Transaction Outcome: failure
+Transaction Failure Reason: Account is a CD account that hasn't passed it maturity date
+
+Transaction History of this Account: 
+Transaction Type: Account Info
+Transaction Amount: 0.0
+Transaction Date: 4 7 2020
+Transaction Outcome: Success
+
+Transaction Requested: Balance Inquiry
+Account Number: 123456989
+Current Balance: $303.56
+
+Transaction Requested: Balance Inquiry
+Error: Account Number 3467876 does not exist
+
+
+
+Transaction Requested: Withdrawal
+Account Number: 583922
+Amount to withdrawal: $20.0
+Error: Account Number 583922 does not exist
+
+
+
+Transaction Requested: Withdrawal
+Account Number: 782485336
+Amount to withdrawal: $100.0
+Error: Account Number 782485336 is a CD account which has not yet passed its maturity date
+
+
+
+Transaction Requested: Withdrawal
+Account Number: 122333787
+Amount to Deposit: $20.0
+Error: $20.0 is an invalid amount
+
+
+
+Transaction Requested: Withdrawal
+Account Number: 345678980
+Amount to withdrawal: $20.0
+Error: Account Number 345678980 is Closed.
+
+
+
+Transaction Requested: Withdrawal
+Account Number: 284922675
+Old Balance: $10229.6
+Amount to withdrawal: $100.0
+New Balance: $10129.6
+
+
+
+Transaction Requested: Close Account
+Account Number: 696579
+Error: Account does not exist
+
+
+
+Transaction Requested: Close Account
+Account Number: 122333787
+Account has been closed
+
+
+
+Transaction Requested: Reopen Account
+Account Number: 5800765
+Error: Account does not exist
+
+
+Transaction Requested: Reopen Account
+Account Number: 122333787
+Account Opened
+
+		Bank Accounts in the Database
+----------------------------------------------------------------------------------------------------------------------------------------
+First Name || Last Name || Social Security Number || Account Number || Balance || Account Type |&-40s| Date |            
+----------------------------------------------------------------------------------------------------------------------------------------
+william   james     333444555           123456989   $      303.56checking  open           
+----------------------------------------------------------------------------------------------------------------------------------------
+steven    thomas    567857989           345678980   $      704.30saving    closed         
+----------------------------------------------------------------------------------------------------------------------------------------
+stacey    lolle     101707899           304567897   $      117.50CD        1         12        2021      open           
+----------------------------------------------------------------------------------------------------------------------------------------
+ugen      belter    456787233           284922675   $    10129.60checking  open           
+----------------------------------------------------------------------------------------------------------------------------------------
+william   james     333444555           782485336   $      303.56CD        9         15        2020      open           
+----------------------------------------------------------------------------------------------------------------------------------------
+nymeria   snow      345675393           122333787   $        0.00checkings open           
+----------------------------------------------------------------------------------------------------------------------------------------
