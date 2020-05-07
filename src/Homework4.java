@@ -1,10 +1,4 @@
-/*
- * Shanna Benammar
- * 
- * ASSIGNMENT NUMBER FOUR
- * 
- * Professor Ziegler
- */
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
