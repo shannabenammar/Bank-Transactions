@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 
 
-public class Homework4 {
+public class BankAccounts {
 
 	public static void main(String[] args) throws IOException {
 
